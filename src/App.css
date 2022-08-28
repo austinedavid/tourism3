@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.blur-div{
+  width: 20rem;
+  height: 18rem;
+  position: fixed;
+  z-index: -9999;
+  
+}
+.blur1{
+  background-image: radial-gradient(yellow, green, gray);
+  filter: blur(75px);
+  right: -5rem;
+  top: -5rem;
+}
+.blur2{
+  background-image: radial-gradient(red, yellow, gray);
+  filter: blur(75px);
+  bottom: 0;
+  left: -5rem;
+}
+.App{
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* css for the nav-bar area */
+.nav-bar{
+  max-width: 1000px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 0px;
+ 
+  margin: 0 auto;
+}
+.logo-container{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.logo{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+}
+.logo-container h3{
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+}
+.navlink-container{
+  width: 100%;
+  
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+ 
+}
+
+.nav-links{
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+ list-style: none;
+}
+.nav-links li a{
+  color: white;
+  text-decoration: none;
+  
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 3px;
+  padding-right: 3px;
+ 
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ 
+  
+}
+.nav-links li  .active{
+  
+  color: blue !important;
+  border-bottom: 4px solid blue;
+  font-weight: bold;
+}
+
+/* this is the style for the house aspect */
+.common-padding{
+  padding: 2rem;
+}
+.span{
+  font-weight: bold;
+  
+}
+.popular-food{
+  list-style: none;
+}
+
+/* media query area */
+@media screen and (max-width: 40rem) {
+  .logo-container h3{
+    font-size: 1rem;
+  }
+  .nav-links li a{
+    font-size: 12px;
+  }
+}
+
